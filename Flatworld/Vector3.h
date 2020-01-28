@@ -20,5 +20,6 @@ public:
 	float operator*(Vector3 v2);
 	Vector3 operator*(float esc);
 	Vector3 UnitVector(Vector3 vec);
+	Vector3 Cross(Vector3 vec);
 };
 

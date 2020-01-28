@@ -74,10 +74,20 @@ float Vector3::operator*(Vector3 v2)
 	return temp;
 }
 
-Vector3 Vector3::operator*(float esc) {
+Vector3 Vector3::operator*(float esc) 
+{
 	Vector3 temp;
 	temp.SetX(x * esc);
 	temp.SetY(y * esc);
 	temp.SetZ(z * esc);
+	return temp;
+}
+
+Vector3 Vector3::cross(Vector3 vec)
+{
+	Vector3 temp;
+	temp.SetX((y * temp.GetZ()) - (z * temp.GetY()));
+	temp.SetY((x * temp.GetZ()) - (z * temp.GetX()));
+	temp.SetZ((x * temp.GetY()) - (y * temp.GetX()));
 	return temp;
 }
