@@ -83,7 +83,7 @@ Vector3 Vector3::operator*(float esc)
 	return temp;
 }
 
-Vector3 Vector3::cross(Vector3 vec)
+Vector3 Vector3::Cross(Vector3 vec)
 {
 	Vector3 temp;
 	temp.SetX((y * temp.GetZ()) - (z * temp.GetY()));
